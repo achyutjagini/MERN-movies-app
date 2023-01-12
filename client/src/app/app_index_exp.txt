@@ -1,0 +1,30 @@
+The code you provided is a React functional component named "App" which renders the main layout 
+of a web application for movie booking.
+It is using the react-router-dom library to handle client-side routing.
+
+At the top of the file, it imports React and the react-router-dom library, which includes the
+ BrowserRouter, Route, and Switch components.
+Then it imports the NavBar component and three other pages component, MoviesList, MoviesInsert,
+ and MoviesUpdate.
+It also imports bootstrap CSS.
+
+In the render() method, it returns JSX code that renders a div element with a title "Movie Booking", 
+<Router> component, <NavBar /> component, and <Switch> component.
+The <Router> component is used to wrap all the routes, it provides the browser's history and allows the use
+ of the <Link> and <Route> components.
+The <NavBar /> component is a custom component that renders the navigation bar of the application.
+
+The <Switch> component is used to group a set of <Route> components together and renders the first one 
+    that matches the current URL.
+It contains three <Route> components that render different pages based on the current URL.
+The first route, with path '/movies/list' and exact prop, will render the MoviesList component when the user
+ navigates to the '/movies/list' URL.
+The second route, with path '/movies/create' and exact prop, will render the MoviesInsert component when the 
+user navigates to the '/movies/create' URL.
+
+The third route, with path '/movies/update/:id' and exact prop, will render the MoviesUpdate component
+ when the user navigates to the '/movies/update/:id' URL. The :id is a dynamic path parameter, which
+  means it can be any value.
+
+Finally, the component is exported as the default export, making it available to be imported 
+in other parts of the application.

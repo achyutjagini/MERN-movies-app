@@ -1,0 +1,61 @@
+
+This code defines a React component called Links, which displays a
+set of links that the user can click to navigate between different pages of the application.
+
+The component imports React and Link from the react-router-dom library and styled component 
+from the styled-components library, which is used to create and apply styles to elements
+in the component.
+
+It creates three constant, Collapse,List and Item which are styled components that are being 
+used to style the navbar-collapse div, navbar-nav div and nav-link anchor tag.
+
+The className attribute is being added using attrs() method provided by the styled-components 
+library and it will apply Bootstrap's classes to the element, making it look like a Bootstrap's
+navigation bar.
+
+The Link component from react-router-dom is being used to create hyperlinks to different
+pages of the application. When a user clicks on one of these links, it uses the
+react-router library to navigate to the corresponding page without causing a full
+page refresh, which provides a better user experience.
+
+The component has a render method which returns JSX that will be rendered by React.
+It is wrapped in a React.Fragment, that allows multiple elements to be returned 
+without a parent node.
+
+This component when rendered will have the links 'List Movies' and 'Create Movie' 
+along with the Movie Booking application text that is a link to the root path '/'
+and when clicked, it will redirect the user to the corresponding page without a 
+full page refresh.
+
+The code you provided is creating a React component called "Link" from the "react-router-dom" library.
+The to prop is being set to "/movies/list" which means that when this Link component is clicked,
+it will navigate the user to the "/movies/list" route. The className prop is being set to "nav-link" 
+
+
+In general, the Link component is used to create a navigation link within a React application 
+that uses the "react-router-dom" library. When clicked, the Link component will update the URL
+ and display the appropriate content based on the route configuration.
+
+
+"nav-link" is a class name provided by Bootstrap, which is a popular
+front-end development framework. In Bootstrap, the "nav-link" class 
+is used to style links within a navigation menu. When applied to an anchor tag,
+it applies some default styling such as font color, padding, and hover effect.
+You can use it for styling links in navigation menu.
+
+It is typically used in combination with other Bootstrap navigation classes 
+such as "navbar", "nav", and "nav-item" to create a full navigation menu. 
+It can be customized through CSS to match the design of your website.
+
+
+The classname "collapse navbar-collapse" is also provided by Bootstrap framework. 
+It is used to create a responsive, toggleable navigation menu. When the screen size 
+is below a certain breakpoint, the navigation menu will be hidden behind a toggle button, 
+and when the button is clicked, the menu will be displayed.
+
+The class "collapse" is used to create the toggle effect, and "navbar-collapse" is
+ used to group the navigation links together. In this specific case, the class 
+"collpase navbar-collapse" is being used as a default class for the Collapse component.
+It is typically used in conjunction with Bootstrap's navigation classes such as 
+"navbar", "nav", and "nav-item" to create a full navigation menu, and it can be 
+customized through CSS to match the design of your website.

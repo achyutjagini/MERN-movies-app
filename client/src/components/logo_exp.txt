@@ -1,0 +1,64 @@
+
+'''''
+This code defines a React component called Logo. React is a JavaScript library for
+building user interfaces and this code uses JSX syntax to create a virtual DOM 
+(Document Object Model).
+
+This component is using styled-components a library that allows you to
+ write CSS styles in JavaScript.
+
+It starts by importing React and the styled component from the styled-components library, which
+ is used to create and apply styles to elements in the component.
+
+Then it imports an image, logo.svg which is being used as the source for the
+logo in this component.
+
+It creates a new constant called Wrapper, which is a styled component 
+that wraps the logo image 
+and gives it a class of "navbar-brand". The attrs() method is used to 
+add an attribute to the component,
+in this case className.
+
+It creates a class component called Logo which has a render method that returns JSX that renders
+an anchor tag <a> with the Wrapper component, this anchor tag is the parent of an image tag <img>
+that gets it's src from the logo import at the top of the code. The img tag has width and height
+set to 50, alt set to "sambarros.com",
+
+Finally, the component is exported so that it can be imported and used in other parts of the 
+application.
+
+The component when rendered, will display the logo.svg image with a 
+link to "https://sambarros.com" 
+and will have a class name of "navbar-brand" using the Wrapper 
+component from styled-components.
+
+''''
+
+const Wrapper = styled.a.attrs({
+    className: 'navbar-brand',
+})``
+
+This line of code creates a constant Wrapper which
+ is an instance of a styled component created using the styled.a method. 
+ The styled.a creates a component that renders an <a> element.
+
+This component is then being modified by the attrs({}) method.
+The attrs() method is used to add attributes to the rendered <a> element.
+In this case, it's adding a class attribute and set it to 'navbar-brand'.
+
+
+
+This JSX code renders an instance of the Wrapper component created earlier, with the attribute href set 
+to "https://wikipedia.com". The Wrapper component is an <a> element, so this will render an anchor tag.
+
+This attribute href is an HTML attribute that specifies the URL of the page the link goes to,
+ it's been added to the Wrapper component, this way it will be added to the <a> tag, so when 
+ the logo is clicked, it will redirect the user to "https://wikipedia.com"
+
+When this component is rendered by React, it will generate the following HTML:
+
+Copy code
+<a class="navbar-brand" href="https://wikipedia.com">...</a>
+
+It allows to set a hyperlink on the logo and redirect the user to a specific URL
+ on the click event, which is useful to redirect the user to the main website, for example.

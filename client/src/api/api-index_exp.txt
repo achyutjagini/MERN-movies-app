@@ -1,0 +1,26 @@
+The code you provided is a set of functions that make API 
+calls to a server using the axios library.
+It starts by importing the axios library and creating an api instance with a baseURL 
+of 'http://localhost:3000/api'.
+This is the base URL of the server that these functions will be making requests to.
+
+The code then defines five functions that correspond to different types of 
+API requests:
+
+insertMovie: makes a POST request to the '/movie' endpoint with the provided
+payload as the request body.
+getAllMovies: makes a GET request to the '/movies' endpoint to retrieve all movies.
+updateMovieById: makes a PUT request to the '/movie/:id' endpoint with the provided 
+payload as the request body.
+deleteMovieById: makes a DELETE request to the '/movie/:id' endpoint to delete a movie 
+with the provided id.
+getMovieById: makes a GET request to the '/movie/:id' endpoint to retrieve a movie with
+ the provided id.
+Finally, the code exports an object that contains all of these functions as properties,
+ and a default export of the object.
+This allows the consumer of this module to import the whole object and access all the 
+functions or to import a specific function.
+
+These functions can be imported and used in other parts of the application to make API calls 
+to the server, for example, in a component's useEffect hook to fetch data from the server
+or to send data to the server when a form is submitted.

@@ -1,0 +1,48 @@
+const Container = styled.div.attrs({
+    className: 'container',
+})`
+    height: 150px;
+`
+
+The code you provided is creating a React component called "Container" using the
+ "styled" method from the
+"styled-components" library. The component is being given the default class of 
+"container" using the "attrs" method.
+It's a Bootstrap class which is used to center the content of the component and it has a fixed width 
+based on the screen size.
+
+After that, the component is being styled with an inline CSS, using a template literal (``),
+ which sets the height of the component to 150px. This allows you to apply additional CSS styles 
+ to the component directly, rather than having to create a separate CSS file. This component 
+ will create a div with classname container and height 150px when rendered.
+
+It is important to note that this component has a fixed height of 150px, which may 
+not be suitable for all use cases, and it should be used with caution. If the content 
+inside the container exceeds 150px, the container will overflow.
+
+use file extension .jsx for JavaScript files that include JSX syntax.
+
+
+const Nav = styled.nav.attrs({
+    className: 'navbar navbar-expand-lg navbar-dark bg-dark',
+})`
+    margin-bottom: 20 px;
+`
+
+The code you provided is creating a React component called "Nav" using the "styled"
+method from the "styled-components" library. The component is being given the default
+class of "navbar navbar-expand-lg navbar-dark bg-dark" using the "attrs" method. 
+These are Bootstrap classes that are being used to create a navigation bar 
+with a dark background color and a toggle button for smaller screens.
+
+After that, the component is being styled with an inline CSS, using a template literal
+ (``), which sets the margin-bottom of the component to 20px. This allows you to apply 
+ additional CSS styles to the component directly, rather than having to create a separate
+  CSS file. This component will create a nav element with classname 'navbar navbar-expand-lg navbar-dark bg-dark'
+   and margin-bottom 20px when rendered.
+
+This component, when rendered, will create a navigation bar with Bootstrap's
+default styling, which includes a dark background color, and a toggle button
+for smaller screens. The inline CSS will add a margin-bottom of 20px to the component, 
+which will add some space between the bottom of the navigation bar and the
+ next element in the page.
