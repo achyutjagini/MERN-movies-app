@@ -1,0 +1,35 @@
+
+This is an example of a server-side application 
+written in JavaScript using the Express.js framework.
+
+The code is importing several modules:
+
+express is the framework that handles routing, middleware, and
+other server-side functionality.
+
+body-parser is used to parse incoming request bodies and make them
+available as a JavaScript object.
+
+cors is a middleware for Express that allows for Cross-Origin Resource Sharing 
+(CORS). It allows the server to accept requests from a different origin than 
+the server itself.
+
+db is supposed to be a module that connects to MongoDB database
+movieRouter is another module that contains the routing information for
+a "movies" resource.
+
+The code creates an Express application by calling express() and 
+assigns it to the app variable. It then sets the port number to 3000
+ and starts the server using the listen() method.
+
+Once the server starts, it will listen for incoming requests
+ on the specified port. When a request is made to the root path
+  ('/'), the server will respond with "Hello World!" message.
+
+The app is using a middleware for handling requests by using app.use() 
+with cors and body-parser middlewares, also it's using app.use() to use
+ movieRouter which will handle movie-related routes.
+
+The code also connects to the MongoDB by db.on('error', console.error.bind(console, 
+'MongoDB connection error:')) It listens to the 'error' event 
+of the db connection and logs the error message to the console.

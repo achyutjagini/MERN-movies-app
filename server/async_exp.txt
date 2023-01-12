@@ -1,0 +1,23 @@
+The async keyword is used to define an asynchronous function in JavaScript. 
+An asynchronous function is a function that is designed to perform a task that takes 
+a certain amount of time to complete, such as fetching data from a server, without
+ blocking the execution of the rest of the code.
+
+When a function is declared as async, it returns a special kind of promise called an 
+"async function promise" which is resolved with the value that is returned from the function
+, or rejected with an exception thrown from within the function.
+
+Here is an example of an async function:
+
+
+async function fetchData() {
+  const response = await fetch('https://some-api.com/data');
+  const data = await response.json();
+  return data;
+}
+
+The await keyword is used inside an async function, to wait for a promise to be resolved.
+ In this example, the fetch() function returns a promise that is resolved with a response object. 
+ The await keyword is used to wait for that promise to be resolved before moving on to the next
+  line of code. Once the response is received, the json() method is called on the response
+ object to parse the JSON data and return it.
